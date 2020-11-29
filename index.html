@@ -22,9 +22,17 @@
              </ul> 
              <ul class="list right-list">
                  <li class="link-item-right">
-                     <a class="link icon-header" href="mailto:info@devstudio.com"> <svg class="icon-header-item1"><use href="./icons/sprit.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
+                     <a class="link icon-header" href="mailto:info@devstudio.com">
+                         <svg class="icon-header-item1">
+                             <use href="./icons/sprit.svg#icon-envelope"></use>
+                        </svg><span>info@devstudio.com</span></a>
+                    </li>
                  <li class="link-item-right">
-                     <a  class="link icon-header" href="tel:++380961111111"><svg class="icon-header-item2"><use href="./icons/sprit.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
+                     <a  class="link icon-header" href="tel:++380961111111">
+                         <svg class="icon-header-item2">
+                             <use href="./icons/sprit.svg#icon-smartphone"></use>
+                        </svg><span>+38 096 111 11 11</span></a>
+                    </li>
              </ul>  
          </nav>
         </div>
@@ -33,7 +41,13 @@
         <div>
             <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
             <div>
-              <button class="btn" type="button">Заказать услугу</button>
+              <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+              <div class="backdrop is-hidden" data-modal>
+                  <div class="modal">
+                      <p>loren</p>
+                    <button class="button-clouse" data-modal-close>Закрыть</button>
+                  </div>
+              </div>
             </div>
         </div>
     </section>
@@ -42,36 +56,28 @@
          <ul class="list list-position">
              <li class="list-position-item">
                  <div class="item-backgraund">
-                    <svg class="features">
-                        <use href="./icons/sprit.svg#icon-satelite"></use>
-                   </svg>
+                    <svg class="features"><use href="./icons/sprit.svg#icon-satelite"></use></svg>
                 </div>
                  <h3 class="list-position-item-title" >Внимание к деталям</h3>
                  <p class="main-text text-box">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
              </li>
              <li class="list-position-item">
                 <div class="item-backgraund">
-                       <svg class="features">
-                           <use href="./icons/sprit.svg#icon-clock"></use>
-                      </svg>
+                       <svg class="features"><use href="./icons/sprit.svg#icon-clock"></use></svg>
                    </div>
                  <h3 class="list-position-item-title">Пунктуальность</h3>
                  <p class="main-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
              </li>
              <li class="list-position-item">
                 <div class="item-backgraund">
-                       <svg class="features">
-                           <use href="./icons/sprit.svg#icon-laptop"></use>
-                      </svg>
+                       <svg class="features"><use href="./icons/sprit.svg#icon-laptop"></use></svg>
                    </div>
                  <h3 class="list-position-item-title">Планирование</h3>
                  <p class="main-text ">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
              </li>
              <li class="list-position-item">
                 <div class="item-backgraund">
-                       <svg class="features">
-                           <use href="./icons/sprit.svg#icon-astronaut"></use>
-                      </svg>
+                       <svg class="features"><use href="./icons/sprit.svg#icon-astronaut"></use></svg>
                    </div>
                  <h3 class="list-position-item-title">Современные технологии</h3>
                  <p class="main-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
@@ -83,9 +89,24 @@
          <div class="container">
              <h2 class="title, section-title">Чем мы занимаемся</h2>
              <ul class="list list-img">
-                 <li class="list-item-position"><img src="./images/img1.png" width="370" height="294" alt="Печатает на клавиатуре"/> </li>
-                 <li class="list-item-position"><img src="./images/img2.png" width="370" height="294" alt="Пользуеся телефоном"/> </li>
-                 <li class="list-item-position"><img src="./images/img3.png" width="370" height="294" alt="Смотрит палитру цветов"/> </li>
+                 <li class="list-item-position">
+                     <figure>
+                         <img src="./images/img1.png" width="370" height="294" alt="Печатает на клавиатуре"/>
+                         <p>Десктопные приложения</p>
+                     </figure>
+                    </li>
+                 <li class="list-item-position">
+                    <figure>
+                     <img src="./images/img2.png" width="370" height="294" alt="Пользуеся телефоном"/>
+                     <p>Мобильные приложения</p>
+                    </figure>
+                </li>
+                 <li class="list-item-position">
+                    <figure>
+                     <img src="./images/img3.png" width="370" height="294" alt="Смотрит палитру цветов"/>
+                     <p>Дизайнерские решения</p>
+                    </figure>
+                </li>
              </ul>
         </div>
     </section>
@@ -97,11 +118,11 @@
                     <img class="list-contacts-img" src="./images/img-1.jpg" width="270" height="260" alt="Игорь Демьяненко"/>
                     <h3 class="contacts-information">Игорь Демьяненко</h3>
                     <p class="job-description" lang="en">Product Designer</p>
-                        <ul class="link social-icons">
-                           <li class="social-icons-item"><a class="social-icons-link" href="https://instagram.com/" target="_blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-instagram"></use></svg></a></li>
-                            <li class="social-icons-item"><a class="social-icons-link" href="https://twitter.com/" target="_blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-twitter"></use></svg></a></li>
-                            <li class="social-icons-item"><a class="social-icons-link" href="https://facebook.com/" target="_blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-facebook"></use></svg></a></li>
-                            <li class="social-icons-item"><a class="social-icons-link" href="https://lincedin.com/" target="_blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-linkedin"></use></svg></a></li>
+                        <ul class="social-icons">
+                            <li class="social-icons-item"><a class="social-icons-link" href="https://instagram.com/" target="blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-instagram"></use></svg></a></li>
+                            <li class="social-icons-item"><a class="social-icons-link" href="https://twitter.com/" target="blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use xlink:href="./icons/sprit.svg#icon-twitter"></use></svg></a></li>
+                            <li class="social-icons-item"><a class="social-icons-link" href="https://facebook.com/" target="blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-facebook"></use></svg></a></li>
+                            <li class="social-icons-item"><a class="social-icons-link" href="https://lincedin.com/" target="blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-linkedin"></use></svg></a></li>
                         </ul>
                  </li>
                  <li class="list-position-team list-contacts-img">
@@ -109,10 +130,10 @@
                      <h3 class="contacts-information">Ольга Репина</h3> 
                      <p class="job-description" lang="en">Frontend Developer</p>
                      <ul class="social-icons">
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://instagram.com/" target="_blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-instagram"></use></svg></a></li>
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://twitter.com/" target="_blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-twitter"></use></svg></a></li>
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://facebook.com/" target="_blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-facebook"></use></svg></a></li>
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://lincedin.com/" target="_blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-linkedin"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://instagram.com/" target="blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-instagram"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://twitter.com/" target="blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-twitter"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://facebook.com/" target="blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-facebook"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://lincedin.com/" target="blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-linkedin"></use></svg></a></li>
                     </ul>
                  </li>
                  <li class="list-position-team list-contacts-img">
@@ -120,10 +141,10 @@
                      <h3 class="contacts-information">Николай Тарасов</h3>
                      <p class="job-description" lang="en">Marketing</p>
                      <ul class="social-icons">
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://instagram.com/" target="_blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-instagram"></use></svg></a></li>
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://twitter.com/" target="_blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-twitter"></use></svg></a></li>
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://facebook.com/" target="_blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-facebook"></use></svg></a></li>
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://lincedin.com/" target="_blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-linkedin"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://instagram.com/" target="blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-instagram"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://twitter.com/" target="blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-twitter"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://facebook.com/" target="blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-facebook"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://lincedin.com/" target="blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-linkedin"></use></svg></a></li>
                     </ul>
                  </li>
                  <li class="list-position-team list-contacts-img">
@@ -131,10 +152,10 @@
                      <h3 class="contacts-information">Михаил Ермаков</h3>  
                      <p class="job-description" lang="en">UI Designer</p>
                      <ul class="social-icons">
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://instagram.com/" target="_blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-instagram"></use></svg></a></li>
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://twitter.com/" target="_blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-twitter"></use></svg></a></li>
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://facebook.com/" target="_blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-facebook"></use></svg></a></li>
-                        <li class="social-icons-item"><a class="social-icons-link" href="https://lincedin.com/" target="_blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-linkedin"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://instagram.com/" target="blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-instagram"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://twitter.com/" target="blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-twitter"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://facebook.com/" target="blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-facebook"></use></svg></a></li>
+                        <li class="social-icons-item"><a class="social-icons-link" href="https://lincedin.com/" target="blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-linkedin"></use></svg></a></li>
                     </ul>
                  </li>
             </ul>
@@ -145,34 +166,35 @@
         <h2 class="title, section-title client-title">Постоянные клиенты</h2>
         <ul class="list client-logo-list">
             <li class="client-logo">
-                <svg class="client-logo-svg">
+                <a class="client-logo-link">
+                <svg class="client-logo-svg logo1">
                     <use href="./icons/sprit.svg#icon-logo-1"></use>
-                </svg>
+                </svg></a>
             </li>
             <li class="client-logo">
-                <svg class="client-logo-svg">
+                <a class="client-logo-link"><svg class="client-logo-svg logo2">
                     <use href="./icons/sprit.svg#icon-logo-2"></use>
-                </svg>
+                </svg></a>
             </li>
             <li class="client-logo">
-                <svg class="client-logo-svg">
+                <a class="client-logo-link"><svg class="client-logo-svg logo3">
                     <use href="./icons/sprit.svg#icon-logo-3"></use>
-                </svg>
+                </svg></a>
             </li>
             <li class="client-logo">
-                <svg class="client-logo-svg">
+                <a class="client-logo-link"><svg class="client-logo-svg logo4">
                     <use href="./icons/sprit.svg#icon-logo-4"></use>
-                </svg>
+                </svg></a>
             </li>
             <li class="client-logo">
-                <svg class="client-logo-svg">
+                <a class="client-logo-link"><svg class="client-logo-svg logo5">
                     <use href="./icons/sprit.svg#icon-logo-5"></use>
-                </svg>
+                </svg></a>
             </li>
             <li class="client-logo">
-                <svg class="client-logo-svg">
+                <a class="client-logo-link"><svg class="client-logo-svg logo6">
                     <use href="./icons/sprit.svg#icon-logo-6"></use>
-                </svg>
+                </svg></a>
             </li>
         </ul>
       </div>
@@ -196,15 +218,16 @@
                   <div class="join-social">
                       <h3 class="join">присоединяйтесь</h3>
                       <ul class="social-icons">
-                          <li class="social-icons-item"><a class="social-icons-link" href="https://instagram.com/" target="_blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-instagram"></use></svg></a></li>
-                          <li class="social-icons-item"><a class="social-icons-link" href="https://twitter.com/" target="_blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-twitter"></use></svg></a></li>
-                          <li class="social-icons-item"><a class="social-icons-link" href="https://facebook.com/" target="_blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-facebook"></use></svg></a></li>
-                          <li class="social-icons-item"><a class="social-icons-link" href="https://lincedin.com/" target="_blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use hreh="./icons/sprite.svg#icon-linkedin"></use></svg></a></li>
+                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://instagram.com/" target="blanc" rel="noopener noreferer" aria-label="Instagram"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-instagram"></use></svg></a></li>
+                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://twitter.com/" target="blanc" rel="noopener noreferer" aria-label="Twitter"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-twitter"></use></svg></a></li>
+                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://facebook.com/" target="blanc" rel="noopener noreferer" aria-label="Facebook"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-facebook"></use></svg></a></li>
+                          <li class="social-icons-item"><a class="social-icons-link-footer" href="https://lincedin.com/" target="blanc" rel="noopener noreferer" aria-label="Lincedin"><svg class="social-icons-svg"><use href="./icons/sprit.svg#icon-linkedin"></use></svg></a></li>
                       </ul>
                   </div>
              </li>
           </ul>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
