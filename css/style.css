@@ -200,10 +200,12 @@ link:hover .icon-header-item2{
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg{
     fill: var(--whait-cl);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons-link-footer:hover .social-icons-svg,
 .social-icons-link-footer:focus .social-icons-svg{
     fill: var(--whait-cl);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons-link-footer:hover{
     background-color: var(--accent-cl);
@@ -214,6 +216,7 @@ link:hover .icon-header-item2{
     top: 0;
     left: 0;right: 0;
     background-color: var(--whait-cl);
+    z-index: 3;
 }
 .logo1 {
     font-family: "Raleway", serif;
@@ -315,10 +318,12 @@ svg.icon-header-item1:hover,
 svg.icon-header-item2:hover{
     color: var(--accent-cl);
     fill: var(--accent-cl);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-item-right:hover svg.icon-header-item1,
 .link-item-right:hover svg.icon-header-item2{
     fill: var(--accent-cl);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover
