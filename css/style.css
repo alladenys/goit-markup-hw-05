@@ -115,7 +115,7 @@ body {
     fill:var(--main-text-cl);
     align-items: center;
 }
-.icon-header-item1:hover{
+.iright-list:hover ::after{
     fill:var(--accent-cl);
 }
 .icon-header-item2{
@@ -128,7 +128,7 @@ body {
     fill:var(--main-text-cl);
     align-items: center;
 }
-.icon-header-item2:hover{
+link:hover .icon-header-item2{
     fill: var(--accent-cl);
 }
 .item-backgraund{
@@ -257,6 +257,7 @@ body {
     font-weight: 500;
     letter-spacing: 0.02em
 }
+.link-item:focus,
 .link-item:hover{
    color: var(--accent-cl);
 }
@@ -309,10 +310,15 @@ body {
     width: 142px;
     width: 144px;
 }
-
-
-.link-item-right:hover{
+.link-item-right:hover,
+svg.icon-header-item1:hover,
+svg.icon-header-item2:hover{
     color: var(--accent-cl);
+    fill: var(--accent-cl);
+}
+.link-item-right:hover svg.icon-header-item1,
+.link-item-right:hover svg.icon-header-item2{
+    fill: var(--accent-cl);
 }
 
 .link:hover
@@ -534,7 +540,6 @@ body {
 }
 .flex-wrap-item:nth-child(3n+3){
     margin-right: 0;
-    
 }
 .flex-wrap-item:nth-child(n+7){
     margin-bottom: 0;
@@ -631,7 +636,9 @@ body {
     display: flex;
     box-sizing: border-box;
     height: 90px;
-
+}
+.client-logo:hover svg.client-logo-svg{
+    fill: var(--accent-cl);
 }
 .client-logo-svg{
     text-align: center;
@@ -663,10 +670,6 @@ body {
 .logo6{
     width: 89px;
     height: 46px;
-}
-
-.client-logo-svg:hover{
-    fill: var(--accent-cl);
 }
 .client-logo:not(:last-child){
     margin-right: 30px;
@@ -702,14 +705,6 @@ figure{
     height: 100%;
     margin: 0;
 }
-figure:hover p,
-figure:hover::after{
-    opacity: 1;
-}
-figure.portfolio:hover p,
-figure.portfolio:hover::after{
-    opacity: 1;
-}
 
 figure p{
     position: absolute;
@@ -729,7 +724,7 @@ figure p{
     text-transform: uppercase;
     color: var(--whait-cl);
     z-index: 2;
-    opacity: 0;
+    opacity: 1;
 }
 figure.portfolio p{
     position: absolute;
@@ -750,7 +745,7 @@ figure.portfolio p{
     justify-content: center;
     color: var(--whait-cl);
     z-index: 2;
-    opacity: 0;
+    opacity: 1;
 }
 figure::after{
     content: "";
@@ -762,7 +757,7 @@ figure::after{
     margin-top: 224px;
     background-color: rgba(47, 48, 58, 0.8);
     z-index: 1;
-    opacity: 0;
+    opacity: 2;
 }
 figure.portfolio::after{
     content: "";
@@ -776,5 +771,3 @@ figure.portfolio::after{
     z-index: 1;
     opacity: 0;
 }
-
-
