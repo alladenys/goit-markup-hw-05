@@ -73,20 +73,35 @@ body {
     background-color: rgba(255, 255, 255, 1);
     padding: 80,40;
     transition: transform 0.5s;
+    margin-top: 221px;
+}
+.icon-x{
+    display: flex;
+    margin-top: 4px;
+    margin-left: 4px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    fill: var(--black-cl);
+
 }
 .button-clouse{
+    content: "";
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    background: inherit;
 }
 .main {
     background-color:var(--whait-cl);
     border: 1px solid #ECECEC
 }
 .portfolio-container{
-    padding-top: 94px;
+    padding-top: 174px;
     margin: 0;
     margin-bottom: 50px;
     justify-content: center;
@@ -217,6 +232,7 @@ link:hover .icon-header-item2{
     left: 0;right: 0;
     background-color: var(--whait-cl);
     z-index: 3;
+    border: 1px solid #ECECEC;
 }
 .logo1 {
     font-family: "Raleway", serif;
@@ -711,34 +727,17 @@ figure{
     margin: 0;
 }
 
-figure p{
+/* figure.portfolio:hover p.animation{
     position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100%;
-    margin-top: 251px;
-    margin-bottom: 0;
-    transform: translate(-50%, 0);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--whait-cl);
-    z-index: 2;
-    opacity: 1;
-}
-figure.portfolio p{
-    position: absolute;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
+    display: flex;
+    top: -12px;
+    left: 4px;
+    width: 360px;
+    height: 395px;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
     transform: translate(0,0);
     font-family: Roboto;
     font-style: normal;
@@ -746,25 +745,13 @@ figure.portfolio p{
     font-size: 18px;
     line-height: 1.55;
     text-transform: none;
-    text-align: center;
-    justify-content: center;
     color: var(--whait-cl);
+    visibility: visible;
     z-index: 2;
     opacity: 1;
 }
-figure::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 70px;
-    width: 100%;
-    margin-top: 224px;
-    background-color: rgba(47, 48, 58, 0.8);
-    z-index: 1;
-    opacity: 2;
-}
-figure.portfolio::after{
+
+figure.portfolio:hover::after{
     content: "";
     position: absolute;
     top: 0;
@@ -774,5 +761,46 @@ figure.portfolio::after{
     margin-top: 0;
     background-color:rgba(33, 150, 243, 0.9);
     z-index: 1;
+    opacity: 1;
+} */
+.hidden{ 
+    display: none;
+} 
+
+.portfolio-container-item li{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-container-item img{
+    max-width: 100%;
+    display: block;
+}
+.description{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 294px;
+    color: var(--whait-cl);
+    background-color: rgba(33, 150, 243, 0.9);
+    text-align: center;
     opacity: 0;
+    top: 100%;
+    padding-top: 63px;
+    padding-left: 24px;
+    padding-bottom: 63px;
+    padding-right: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.55;
+    -webkit-transition: all 0.25s;
+    -o-transition:all 0.25s;
+    transition: all 0.25s;
+}
+.portfolio-container-item li:hover .description{
+    opacity: 1;
+    top: 0;
 }
