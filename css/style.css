@@ -726,6 +726,31 @@ figure{
     height: 100%;
     margin: 0;
 }
+figure p{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 70px;
+    margin-top: 224px;
+    margin-bottom: 0;
+    transform: translate(-50%, 0);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--whait-cl);
+    z-index: 2;
+    opacity: 1;
+    text-align: center;
+    padding-top: 27px;
+    background-color: rgba(47, 48, 58, 0.8);;
+}
+
 
 /* figure.portfolio:hover p.animation{
     position: absolute;
