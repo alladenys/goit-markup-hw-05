@@ -64,7 +64,7 @@ body {
 }
 .modal{
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
     width: 100%;
@@ -74,6 +74,8 @@ body {
     padding: 80,40;
     transition: transform 0.5s;
     margin-top: 221px;
+    padding-top: 40px;padding-right: 39px;
+    padding-bottom: 40px;padding-left: 41px;
 }
 .icon-x{
     display: flex;
@@ -808,18 +810,16 @@ figure.portfolio:hover::after{
     height: 294px;
     color: var(--whait-cl);
     background-color: rgba(33, 150, 243, 0.9);
-    text-align: center;
     opacity: 0;
     top: 100%;
     padding-top: 63px;
     padding-left: 24px;
     padding-bottom: 63px;
     padding-right: 24px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 18px;
     line-height: 1.55;
+    letter-spacing: 0.03em;
     -webkit-transition: all 0.25s;
     -o-transition:all 0.25s;
     transition: all 0.25s;
