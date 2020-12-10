@@ -132,9 +132,7 @@ body {
     fill:var(--main-text-cl);
     align-items: center;
 }
-.iright-list:hover ::after{
-    fill:var(--accent-cl);
-}
+
 .icon-header-item2{
     margin-top: 3px;
     margin-bottom: -3px;
